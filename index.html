@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body ng-app='myApp'>
+	<div ng-controller='myController as main'>
+		<button ng-click='main.addWord()'>Words</button>
+		<button ng-click='main.addPhrase()'>More Words</button>
+		<button ng-click='main.addWord(true)'>Word with Decorations</button>
+		<button ng-click='main.addPhrase(true)'>More Words with Decorations</button>
+		<p id='wordsHere'></p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src='app.js'></script>
+</body>
+</html>
